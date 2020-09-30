@@ -48,6 +48,9 @@ namespace PracticaSQLite.View
 
             Application.Current.MainPage = new NavigationPage(new Pantalla2View());
 
+
+
+
         }
     }
 }
