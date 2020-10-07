@@ -17,7 +17,7 @@ namespace PracticaSQLite.View
     {
         public SQLiteConnection conn;
         List<Usuario> listaUsuarios = new List<Usuario>();
-        public List<Usuario> ListUsuarios { get { return listaUsuarios} }
+        public List<Usuario> ListUsuarios { get { return listaUsuarios; } }
         public Pantalla2View ()
 		{
 			InitializeComponent ();
