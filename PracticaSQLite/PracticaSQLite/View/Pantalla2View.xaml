@@ -5,10 +5,9 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Bienvenido" />
-                <StackLayout>
-                    <Label Text="Bienvenido" />
-                </StackLayout>
+                <ListView>
+                    
+                </ListView>
             </StackLayout>
             
         </ScrollView>
