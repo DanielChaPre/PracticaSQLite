@@ -5,8 +5,15 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <ListView>
-                    
+                <ListView
+                    ItemsSource="{Binding ListUsuarios}"
+                    x:Name="UsuariosView"
+                    >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding nombreusuario}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
                 </ListView>
             </StackLayout>
             

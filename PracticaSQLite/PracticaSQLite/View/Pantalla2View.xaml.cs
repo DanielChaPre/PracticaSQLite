@@ -16,11 +16,15 @@ namespace PracticaSQLite.View
 	public partial class Pantalla2View : ContentPage
     {
         public SQLiteConnection conn;
+        List<Usuario> listaUsuarios = new List<Usuario>();
+        public List<Usuario> ListUsuarios { get { return listaUsuarios} }
         public Pantalla2View ()
 		{
 			InitializeComponent ();
             conn = DependencyService.Get<ISQLitePlatform>().GetConnection();
             conn.CreateTable<Usuario>();
+
+            listaUsuarios = GetItemsAsync();
         }
 
         public List<Usuario> GetItemsAsync()
