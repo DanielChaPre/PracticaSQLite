@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaSQLite.View.DetalleUsuarioPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+            Text="Usuario"
+            />
+            <Entry
+            x:Name="txtusuario"
+            />
+            <Label
+            Text="Password"
+            />
+            <Entry
+            x:Name="txtpass"
+            />
+            <StackLayout
+                Orientation="Horizontal"
+                >
+                <Button
+                   Clicked="BtnActualizar_Clicked"
+                    Text="Actualizar"
+                    x:Name="btnActualizar"
+                    />
+                <Button
+                    Clicked="BtnEliminar_Clicked"
+                     Text="Eliminar"
+                    x:Name="btnEliminar"
+                    />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
