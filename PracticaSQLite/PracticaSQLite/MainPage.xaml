@@ -2,13 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PracticaSQLite"
+             xmlns:vm="clr-namespace:PracticaSQLite.ViewModel"
              x:Class="PracticaSQLite.MainPage">
-
+    
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel/>
+    </ContentPage.BindingContext>
+    
     <StackLayout>
         <Label
             Text="Ingrese el usuario"
             />
         <Entry
+            Text="{Binding Usuario}"
             x:Name="txtusuario"
             />
         <Label
@@ -16,10 +22,11 @@
             />
         <Entry
             IsPassword="True"
+            Text="{Binding Password}"
             x:Name="txtpass"
             />
         <Button
-            Clicked="BtnLogin_Clicked"
+            Command="{Binding LogearCommand}"
             Text="iniciar sesión"
             x:Name="btnLogin"
             />

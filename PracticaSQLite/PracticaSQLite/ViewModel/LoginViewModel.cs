@@ -25,12 +25,12 @@ namespace PracticaSQLite.ViewModel
 
         public string Usuario {
             get => usuario;
-            set => usuario = value;
+            set { usuario = value; OnPropertyChanged(); }
         }
 
         public string Password {
             get => password;
-            set => password = value;
+            set { password = value; OnPropertyChanged(); }
         }
 
         public ICommand LogearCommand { private set; get; }
