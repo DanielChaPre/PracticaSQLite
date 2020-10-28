@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PracticaSQLite.View;
+using PracticaSQLite.Views.Forms;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,7 +14,9 @@ namespace PracticaSQLite
             XF.Material.Forms.Material.Init(this);
             InitializeComponent();
             
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            //MainPage = new EjemploPage();
+            MainPage = new SimpleLoginPage();
         }
 
         protected override void OnStart()

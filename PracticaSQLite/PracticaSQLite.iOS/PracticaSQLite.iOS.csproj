@@ -92,10 +92,16 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\BorderlessEntryRenderer.cs" />
     <Compile Include="Services\iOSSQLitePlatform.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\UIFontIcons.ttf" />
+    <BundleResource Include="Resources\Montserrat-Bold.ttf" />
+    <BundleResource Include="Resources\Montserrat-Medium.ttf" />
+    <BundleResource Include="Resources\Montserrat-Regular.ttf" />
+    <BundleResource Include="Resources\Montserrat-SemiBold.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -151,6 +157,15 @@
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.7.335</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.Buttons">
+      <Version>18.3.0.44</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.Core">
+      <Version>18.3.0.44</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
+      <Version>18.3.0.44</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
